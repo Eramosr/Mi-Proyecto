@@ -1,0 +1,75 @@
+body {
+  background: #FE9A2E;
+  margin: 0;
+
+}
+/*******
+ Encabezado de pagina
+ *******/
+
+header{
+
+background: #F5D0A9;
+margin: 0;
+
+
+
+}
+.FotoEncabezado {
+  max-width: 100%;
+  display: inline-block;
+
+}
+
+h1 {
+  position: relative;
+  font-family :'Gloria Hallelujah','Lato';
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0 0 0 10px;
+  height: 0;
+
+
+
+}
+/*******
+ Navegador principal
+ *******/
+
+navheader a, navheader a:visited {
+  color: white;
+  text-decoration: none;
+}
+navheader a.selected{
+  background-color: #F79F81;
+
+}
+navheader a:hover {
+color: #FF8000;
+}
+
+navheader {
+  text-align: right;
+  font-family: 'Oswald';
+
+  padding: 10px 0 ;
+  margin: 20px 0 0;
+
+
+}
+
+navheader ul {
+  list-style: none;
+  margin: 0 20px 0 0;
+  padding: 0 15px 0 0;
+}
+
+navheader li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+
+
+
+}
