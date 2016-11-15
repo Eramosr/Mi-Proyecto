@@ -1,59 +1,58 @@
 body {
-  background: #FE9A2E;
+  background: orange;
   margin: 0;
-
+  display: inline-block;
 }
 /*******
- Encabezado de pagina
+ Encabezado de pagina #FE9A2E #F5D0A9
  *******/
 
 header{
-
-background: #F5D0A9;
+background: white;
 margin: 0;
 
-
-
 }
-.FotoEncabezado {
-  max-width: 100%;
-  display: inline-block;
 
-}
 
 h1 {
   position: relative;
   font-family :'Gloria Hallelujah','Lato';
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  font-size: 1.1em;
-  font-weight: normal;
-  margin: 0 0 0 10px;
+  font-size: 1.2em;
+  margin:0;
   height: 0;
 
+}
 
+.FotoEncabezado {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
 
 }
+
+
 /*******
  Navegador principal
  *******/
 
 navheader a, navheader a:visited {
-  color: white;
+  color: #B45F04  ;
   text-decoration: none;
+
 }
 navheader a.selected{
-  background-color: #F79F81;
+  background-color: orange;
 
 }
 navheader a:hover {
-color: #FF8000;
+color: #424242;
 }
 
 navheader {
   text-align: right;
   font-family: 'Oswald';
-
   padding: 10px 0 ;
   margin: 20px 0 0;
 
