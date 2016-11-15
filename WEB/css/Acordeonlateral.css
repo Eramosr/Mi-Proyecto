@@ -1,0 +1,59 @@
+section1 {
+display: inline-table;
+
+}
+
+.Desplegable-lateral {
+   margin: 0 auto;
+   max-width: 40em;
+   width: 100%;
+}
+
+.Desplegable {
+position: relative;
+width:100%;
+}
+
+.Desplegable input {
+position: absolute;
+left: 0;
+top:0;
+z-index: -999;
+}
+
+.Desplegable label {
+
+background: #f7d881;
+color: rgba(165, 24, 24, 0.76);
+display: block;
+font-family: 'Oswald' ;
+font-weight: bold;
+line-height: 3;
+padding-left: .5em;
+margin-bottom: .5em;
+transition: letter-spacing .55s;
+}
+
+.Desplegable input: focus + label,
+.tab label: hover {
+background: #9AFE2E;
+letter-spacing: 1px;
+
+}
+
+.Contenido1, .Contenido2, .Contenido3 {
+max-height: 0;
+overflow: hidden;
+transition: all .35s;
+
+}
+
+.Contenido1, .Contenido2, .Contenido3 ul {
+margin: 1em 0;
+list-style: none;
+
+}
+section2 {
+display: inline-table;
+
+}
