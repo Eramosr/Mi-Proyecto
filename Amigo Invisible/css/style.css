@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.listName {
+  list-style: none;
+}
+.listMail {
+  list-style: none;
+}
+.name__item {
+  font-size: 1rem;
+  padding: 6px;
+}
+
+
+.name__item:nth-child(even) {
+  background: #ddd;
+}
+
+.name__item:nth-child(odd) {
+  background: #eee;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Mi Amigo Invisible</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>AMIGO INVISIBLE</h1>
+    </header>
+
+    <div id='memberForm'>
+      <p>Introduce participante</p>
+      <input class= 'infoParticipants' type= 'text' id='name'>
+      <p>Introduce correo participante</p>
+      <input class= 'infoParticipants' type= 'text' id='mail'>
+      <button class= 'buttonParticipants' id= 'intro'> ¡Introducir participante! </button>
+    </div>
+
+    <div id="errorMessage" class="error" hidden>
+      Debes introducir el nombre del participante
+    </div>
+
+    <table id="memberList">
+      <td id='memberName' class="memberList_name"></td>
+      <td id='memberMail' class="memberList_mail"></td>
+    </table>
+
+    <div id='dataConfirmation'>
+      <button class= 'finPlayers' id= 'fin'> ¿Están todos los participantes? </button>
+
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
