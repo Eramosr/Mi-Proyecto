@@ -1,59 +1,53 @@
-section1 {
+
+navlateral {
 display: inline-table;
-
+background-color: white;
 }
 
-.Desplegable-lateral {
-   margin: 0 auto;
-   max-width: 40em;
-   width: 100%;
-}
+ .menu {
+      display: block;
+      list-style-type: none;
+      text-align: left;
+      margin: 0 0 5px 5px;
+      padding: 10px 30px 5px 8px;
+      text-decoration: none;
+      border-color: #f3802c;
+      border-left-style: solid;
+      border-left-width: 0.9em;
+      border-bottom-style: solid;
+      border-bottom-color: #f3802c;
+      border-bottom-width: 0.3em;
+      color: #B45F04;
+      font-family: 'Oswald';
+      border-top-left-radius: 10px;
+  }
 
-.Desplegable {
-position: relative;
-width:100%;
-}
+  .menu:hover {
+  background-color: #cecdcc;
 
-.Desplegable input {
-position: absolute;
-left: 0;
-top:0;
-z-index: -999;
-}
+  }
 
-.Desplegable label {
+  .contenido {
+    list-style: none;
+    padding: 0 0 0 2em;
 
-background: #f7d881;
-color: rgba(165, 24, 24, 0.76);
-display: block;
-font-family: 'Oswald' ;
-font-weight: bold;
-line-height: 3;
-padding-left: .5em;
-margin-bottom: .5em;
-transition: letter-spacing .55s;
-}
+  }
+   .contenido li {
+     border-left-style: ridge;
+     border-left-color: orange;
+     padding: 0 5px;
 
-.Desplegable input: focus + label,
-.tab label: hover {
-background: #9AFE2E;
-letter-spacing: 1px;
 
-}
+   }
+    .contenido li a {
+    text-decoration: none;
+    font-family: "Pathway Gothic One";
+    font-size: 1.2em;
+    color: orange;
 
-.Contenido1, .Contenido2, .Contenido3 {
-max-height: 0;
-overflow: hidden;
-transition: all .35s;
+  }
+    .contenido li:hover {
+    background-color: #cecdcc;
 
-}
 
-.Contenido1, .Contenido2, .Contenido3 ul {
-margin: 1em 0;
-list-style: none;
-
-}
-section2 {
-display: inline-table;
-
-}
+  }

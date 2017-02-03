@@ -1,4 +1,4 @@
-$(document).ready(function() {});
+
 
 /* Hacemos desaparecer el contenido de cada uno de los menus*/
 $(".contenido").hide();
@@ -8,17 +8,25 @@ $(".contenido").hide();
     /* Añadimos una categoria Activa al menu sobre el que esta el ratón */
 
 $(".menu").hover (function(e){
-$(this).addClass('active');
+    e.preventDefault();
+    $(this).addClass('active');
   /* El menú selecionado, con la clase de activa, se desplegara */
-    if($(this).hasClass('active')){
-       $(this).next().slideToggle('slow');
-      e.preventDefault();
-          }
-  } , function (e){
-      $('.contenido').slideUp();
-      $(this).removeClass('active');
-      e.preventDefault();
-  }
-);
+      if($(this).hasClass('active')){
+       $(this).next().slideDown(function(){
+        $(this).filter("middle");
+       }
+     )
+        }
 
-    /* El menú selecionado, con la clase de activa, se desplegara */
+  } , function (e){
+        $(this).removeClass('active');
+        $('.contenido li').mouseenter(function(){
+                e.preventDefault();
+              }
+            )
+      $('navlateral').mouseleave(function(){
+      $(".menu").next().slideUp('10000');
+      }
+    )
+  }
+  )
