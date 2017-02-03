@@ -69,15 +69,16 @@ function checkMail (mail){
     if (playersMail[i].textContent.includes('@')== false) {
       alert ('¡Mail no valido!');
       listaMails.removeChild(playersMail[i]);
-      
+      listaNames.removeChild(playersName[i]);
+
     }
   }
 }
 
 function finishPlayers(){
   infoPlayers.setAttribute('hidden', '');
-}
 
+}
 
 
 function add() {
